@@ -1,16 +1,32 @@
-# user_profile_app
+# User Profile App 🚀
 
-A new Flutter project.
+## Overview
+This Flutter app fetches user data from an API and displays it, including **name, email, and profile picture**.
 
-## Getting Started
+## Features
+- Fetches data using the `http` package.
+- Parses JSON response into a Dart model (`User`).
+- Displays user details in a responsive UI.
+- Uses `FutureBuilder` for API calls.
 
-This project is a starting point for a Flutter application.
+## Installation
+1. Install Flutter from [flutter.dev](https://flutter.dev).
+2. Clone the repository:
+git clone https://github.com/your-repo/user-profile-app.git cd user-profile-app
 
-A few resources to get you started if this is your first Flutter project:
+## Project Structure
+user_profile_app/ │── lib/ │ ├── main.dart │ ├── api_service.dart │ ├── user.dart │── android/app/src/main/AndroidManifest.xml │── pubspec.yaml │── README.md
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## API Details
+- The app fetches user details from:
+https://api.example.com/user-profile
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Example JSON response:
+```json
+{
+  "name": "John Doe",
+  "email": "johndoe@example.com",
+  "profilePicture": "https://example.com/profile.jpg"
+}
+
+This project is open-source under the MIT License.
